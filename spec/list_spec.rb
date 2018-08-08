@@ -1,4 +1,4 @@
-require 'notes'
+require 'list'
 
 RSpec.describe List do
 
