@@ -13,5 +13,12 @@ RSpec.describe List do
     expect(subject.create_note).to respond_to :see_note
   end
 
+  it "adds note to the list instance" do
+    note = Note.new
+    expect(subject.add_note(note)).to eq(note)
+  end
+
+
+
 
 end

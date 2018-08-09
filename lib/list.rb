@@ -6,5 +6,11 @@ class List
     Note.new
   end
 
+  def add_note(note)
+    note
+  end
+
+
+
 
 end
