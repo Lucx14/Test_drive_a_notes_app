@@ -21,7 +21,13 @@ RSpec.describe List do
 
   it { is_expected.to respond_to(:add_note).with(1).argument }
 
+  it { is_expected.to respond_to(:note) }
 
+  it "returns the note" do
+    note = Note.new
+    subject.add_note(note)
+    expect(subject.note).to eq(note)
+  end
 
 
 
