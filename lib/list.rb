@@ -1,7 +1,9 @@
+require_relative 'note'
+
 class List
 
-  def add_note
-
+  def create_note
+    Note.new
   end
 
 
