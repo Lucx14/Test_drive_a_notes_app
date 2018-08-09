@@ -19,6 +19,10 @@ RSpec.describe List do
   end
 
 
+  it { is_expected.to respond_to(:add_note).with(1).argument }
+
+
+
 
 
 end
