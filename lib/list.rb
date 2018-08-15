@@ -17,7 +17,9 @@ class List
   end
 
   def pick_note(title)
-    "shopping/milk"
+#    "shopping: milk"
+    @list.each{ |hash| hash.select { |k, v| k == title }}
+
   end
 
 
