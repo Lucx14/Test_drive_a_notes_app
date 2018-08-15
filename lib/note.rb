@@ -3,7 +3,7 @@ class Note
   attr_reader :note
 
   def initialize(title, body)
-    @note = { title: title, body: body }
+    @note = { title => body }
   end
 
 end

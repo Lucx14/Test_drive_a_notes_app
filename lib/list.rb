@@ -12,4 +12,7 @@ class List
     @list << note
   end
 
+  def titles
+    @list.map{ |note|  note.keys }.flatten
+  end
 end

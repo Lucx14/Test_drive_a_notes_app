@@ -10,6 +10,12 @@ describe List do
     expect(subject.add_note(note)).to eq([note])
   end
 
+  it ".titles - shows a list of all the titles" do
+    note1 = Note.new("shopping", "milk")
+    subject.add_note(note1.note)
+    expect(subject.titles).to eq(["shopping"])
+  end
+
 
 
 end
